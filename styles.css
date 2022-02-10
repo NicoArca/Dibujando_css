@@ -1,0 +1,48 @@
+body{
+    margin: 0%;
+}
+
+.fondo{
+    display: block;
+    height: 100vh;
+    background-color: skyblue;
+}
+
+.sol{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    clip-path: ellipse(93px 85px at 5% 15%);
+}
+
+
+
+.avion{
+     background-image:url(avion.png);
+
+     left: -10px;
+     animation-name: avion-volando;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+}
+
+
+
+.suelo{
+    height: 0px;
+    width: 100px;
+    background-color: green;
+
+}
+
+@keyframes avion-volando{
+    
+    0% {
+        left:-10px;
+    }
+
+    100% {
+        left: 1000px;
+    }
+}
